@@ -90,3 +90,6 @@ def search_expenses():
     print(f"\nSearch Results for '{keyword}':")
     for e in matches:
         print(f"[{e['id']}] {e['date']} | {e['category']} | {e['description']} | INR {e['amount']:.2f}")
+
+
+        # please read it ......
