@@ -35,6 +35,23 @@ def view_expenses():
         print(f"{e['id']:<5} {e['date']:<12} {e['category']:<12} {e['amount']:<10.2f} {e['description']}")
 
 
+def delete_expense():
+    view_expenses()
+    expenses = load_expenses()
+    if not expenses:
+        return
+    try:
+        target_id = int(input("Enter Expense ID to delete: "))
+        updated = [e for e in expenses if e["id"] != target_id]
+        if len(updated) == len(expenses):
+            print("Expense ID not found.")
+        else:
+            save_expenses(updated)
+            print(f"Expense ID {target_id} deleted.")
+    except ValueError:
+        print("Please enter a valid numeric ID.")
+
+
 
 
 
