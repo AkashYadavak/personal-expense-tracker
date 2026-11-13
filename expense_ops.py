@@ -24,4 +24,17 @@ def add_expense():
         print("Invalid amount! Please enter a numeric value.")
 
 
+def view_expenses():
+    expenses = load_expenses()
+    if not expenses:
+        print("No expenses recorded yet.")
+        return
+    print(f"\n{'ID':<5} {'Date':<12} {'Category:<12'} {'Amount':<10} {'Description'}")
+    print('-' * 60)
+    for e in expenses:
+        print(f"{e['id']:<5} {e['date']:<12} {e['category']:<12} {e['amount']:<10.2f} {e['description']}")
+
+
+
+
 
