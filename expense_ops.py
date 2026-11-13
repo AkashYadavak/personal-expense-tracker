@@ -25,3 +25,13 @@ def expense_summary():
     for cat, amt in breakdown.items():
         pct = (amt / total) * 100
         print(f"  - {cat}: INR {amt:.2f} ({pct:.1f}%)")
+
+def search_expenses():
+    keyword = input("Enter keyword to search in descriptions: ").strip().lower()
+    matches = [e for e in load_expenses() if keyword in e["description"].lower()]
+    if not matches:
+        print(f"No expenses matching '{keyword}'.")
+        return
+    print(f"\nSearch Results for '{keyword}':")
+    for e in matches:
+        print(f"[{e['id']}] {e['date']} | {e['category']} | {e['description']} | INR {e['amount']:.2f}")
