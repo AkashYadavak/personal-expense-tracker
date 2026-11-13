@@ -11,7 +11,7 @@ A lightweight, **command-line personal finance application** built in Python tha
 | Student Role | Name | Roll Number | Branch | Key Contributions |
 | :--- | :--- | :--- | :--- | :--- |
 | **Student 1** | `Akash Yadav` | `08` | `Akash-branch` | Repo setup, `storage.py`, Add/View/Delete expenses, `README.md` |
-| **Student 2** | `Waquas Ahmed` | `67` | `Waquas-branch` | Filter by category, Spending summary, Keyword search, Conflict resolution, `CONTRIBUTING.md` |
+| **Student 2** | `Waquas Ahmad` | `67` | `Waquas-branch` | Filter by category, Spending summary, Keyword search, Conflict resolution, `CONTRIBUTING.md` |
 
 ## Features & Technologies
 - **Add Expense:** Record amount, category, description, and automatic date stamp.
