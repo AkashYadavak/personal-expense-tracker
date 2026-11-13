@@ -1,6 +1,7 @@
 import expense_ops as ops
 
-APP_BANNER = "=== Personal Expense Tracker v1.0 ==="
+APP_BANNER = "=== Personal Expense Tracker v1.0 (Pro Console Edition) ==="
+
 
 
 def main():
